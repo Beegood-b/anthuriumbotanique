@@ -9,6 +9,7 @@
   src: url('/fonts/MontserratAlternates-Medium.otf');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Rubik';
   src: url('/fonts/Rubik-Medium.ttf');
@@ -31,7 +32,7 @@ body {
   background-color: #E4EFDE;
   font-family: 'Roboto';
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
 }
@@ -41,9 +42,11 @@ a {
   outline: none;
   text-decoration: none;
 }
+
 a:hover {
-  outline:none;
+  outline: none;
 }
+
 a:focus {
   outline: none;
 }
@@ -55,12 +58,16 @@ h3 {
   color: #333333;
 }
 
+h2 {
+  font-size: 24px;
+}
+
 h4 {
   font-weight: 200;
 }
 
 .main {
-  padding-top: 4.5em;
+  padding-top: 2em;
   padding-bottom: 0.5em;
 }
 
@@ -74,42 +81,34 @@ h4 {
 }
 
 .header {
-  position: fixed;
-  width: calc(100% - 0.6em);
-  margin: 0 0.3em;
+  width: 100%;
   top: 0;
   padding: 0 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #769873,#E4EFDE);
+  background: linear-gradient(to right, #769873, #E4EFDE);
   filter: drop-shadow(0 0 0.75rem #0e0e0e3d);
-  border-radius: 20px;
-  z-index: 10;
 }
 
 
-.nav__flag-buttons {
+.nav__language {
   display: flex;
-  column-gap: 0.5em;
-  padding: 0 0.5em;
-  border-radius: 8px;
-  margin: 0.7em 0;
+  /* margin: 0.7em 0; */
 }
 
-.flag-icon {
-  max-width: 24px;
-  /* Можно настроить размер флага */
-  height: auto;
+.nav__language span {
   cursor: pointer;
-  /* Добавляет эффект при наведении */
-  transition: transform 0.3s ease;
-  /* Плавный эффект при нажатии */
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1em 0;
+  color: #444;
 }
 
-.flag-icon:hover {
-  transform: scale(1.1);
-  /* Увеличивает иконку при наведении */
+.nav__language span:nth-child(2)::before {
+  content: "|";
+  padding: 0 1em;
+  font-weight: 100;
 }
 
 h2,
@@ -165,7 +164,8 @@ li {
 }
 
 .footer {
-  background: #769873;
+  background: linear-gradient(to left, #769873, #E4EFDE);
+  filter: drop-shadow(0 0 0.75rem #0e0e0e3d);
 }
 
 .footer__socials {
@@ -175,6 +175,6 @@ li {
   column-gap: 2em;
   padding-block: 1em;
   font-size: 24px;
-  color: #E4EFDE;
+  color: #555;
   /* text-shadow: 0 0 2px #fff; */
 }
