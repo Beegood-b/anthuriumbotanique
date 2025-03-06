@@ -1,21 +1,180 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Light.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/MontserratAlternates-Medium.otf');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-Medium.ttf');
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body,html {
+body,
+html {
   height: 100%;
   width: 100%;
-  background-color: azure;
+}
+
+body {
+  background-color: #E4EFDE;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  outline:none;
+}
+a:focus {
+  outline: none;
+}
+
+ul,
+li,
+h2,
+h3 {
+  color: #333333;
+}
+
+h4 {
+  font-weight: 200;
+}
+
+.main {
+  padding-top: 4.5em;
+  padding-bottom: 0.5em;
+}
+
+.hidden {
+  display: none;
 }
 
 .wrapper {
-  height: 100vh;
+  min-height: 100%;
+  position: relative;
 }
 
-.center {
+.header {
+  position: fixed;
+  width: calc(100% - 0.6em);
+  margin: 0 0.3em;
+  top: 0;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #769873,#E4EFDE);
+  filter: drop-shadow(0 0 0.75rem #0e0e0e3d);
+  border-radius: 20px;
+  z-index: 10;
+}
+
+
+.nav__flag-buttons {
+  display: flex;
+  column-gap: 0.5em;
+  padding: 0 0.5em;
+  border-radius: 8px;
+  margin: 0.7em 0;
+}
+
+.flag-icon {
+  max-width: 24px;
+  /* Можно настроить размер флага */
+  height: auto;
+  cursor: pointer;
+  /* Добавляет эффект при наведении */
+  transition: transform 0.3s ease;
+  /* Плавный эффект при нажатии */
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
+  /* Увеличивает иконку при наведении */
+}
+
+h2,
+h3,
+li {
+  margin: 1em;
+}
+
+.hide {
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
+.main-col__heading {
+  margin-bottom: 2.5em;
+  font-size: 25px;
+  text-align: center;
+}
+
+.main-col__list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.main-col__item {
+  position: relative;
+  /* Position relative to create space for the emoji */
+  padding-left: 30px;
+  /* Add some padding for the emoji */
+}
+
+.main-col__list .main-col__item::before {
+  content: "🌷";
+  /* Apple emoji */
+  position: absolute;
+  /* Position the emoji */
+  left: 0;
+  /* Place it at the start of the list item */
+  top: 0;
+  /* Align with the list item */
+  font-size: 18px;
+  /* Adjust the size of the emoji */
+}
+
+.main-col__sub-heading {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  margin-left: 1.5em;
+}
+
+.footer {
+  background: #769873;
+}
+
+.footer__socials {
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 2em;
+  padding-block: 1em;
+  font-size: 24px;
+  color: #E4EFDE;
+  /* text-shadow: 0 0 2px #fff; */
 }

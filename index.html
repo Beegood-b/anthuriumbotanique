@@ -1,16 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="wrapper center">
-    <h1>hello world</h1>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-logo">
+          <a class="header-logo__link" href="/"
+            ><img
+              class="header-logo__img"
+              src="/icons/logo.png"
+              alt="Header Logo"
+              height="70"
+              loading="lazy"
+          /></a>
+        </div>
+        <nav class="header__nav">
+          <div class="nav__flag-buttons">
+            <img
+              src="icons/latvia-flag-icon.png"
+              alt="Latvian Flag"
+              class="flag-icon btn-lat"
+            />
+            <img
+              src="icons/russia-flag-icon.png"
+              alt="Russian Flag"
+              class="flag-icon btn-rus"
+            />
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="main__col1">
+          <h2 class="main-col__heading hide">
+            Kā kopt ziedu pušķi, lai tas ilgāk saglabātos svaigs:
+          </h2>
+          <h3 class="main-col__sub-heading hide">1. Pušķa sagatavošana</h3>
+          <ul class="main-col__list hide hide">
+            <li class="main-col__item">
+              Uzreiz pēc saņemšanas izņemiet pušķi no iepakojuma un noņemiet
+              apakšējās lapas, kas var nonākt ūdenī.
+            </li>
+            <li class="main-col__item">Kātiņu apgriešana:</li>
+            <li class="main-col__item">
+              Apgrieziet kātiņus katru dienu vai katru otro dienu 45 grādu
+              leņķī,
+            </li>
+            <li class="main-col__item">
+              Izņēmumi: ranunkuļi, tulpes, narcises – tos labāk neapgriezt pārāk
+              bieži.
+            </li>
+          </ul>
+          <h3 class="main-col__sub-heading hide">2. Ūdens un vāze</h3>
+          <ul class="main-col__list hide">
+            <li class="main-col__item">
+              Izmantojiet tīru, aukstu ūdeni (vēlams filtrētu vai nostādinātu).
+            </li>
+            <li class="main-col__item">
+              Ūdeni mainiet katru dienu vai vismaz reizi divās dienās.
+            </li>
+            <li class="main-col__item">
+              Katru reizi mainot ūdeni, nomazgājiet vāzi ar ziepēm, lai
+              izvairītos no baktēriju vairošanās.
+            </li>
+            <li class="main-col__item">Ūdens daudzums:</li>
+            <li class="main-col__item">
+              Ziediem ar stingriem kātiem (rozes, lizantusi) nepieciešams daudz
+              ūdens – aptuveni 2/3 vāzes.
+            </li>
+            <li class="main-col__item">
+              Eikaliptam un ziediem ar mīkstiem kātiem vajag mazāk ūdens, lai
+              tie nesāktu pūt.
+            </li>
+          </ul>
+          <h3 class="main-col__sub-heading hide">3. Novietošanas apstākļi</h3>
+          <ul class="main-col__list hide">
+            <li class="main-col__item">
+              Turiet pušķi prom no radiatoriem, apsildāmām grīdām, tiešiem
+              saules stariem un caurvēja.
+            </li>
+            <li class="main-col__item">
+              Nenovietojiet ziedus blakus augļiem, jo tie izdala etilēnu, kas
+              paātrina vīšanu.
+            </li>
+          </ul>
+          <h3 class="main-col__sub-heading hide">4. Papildu ieteikumi</h3>
+          <ul class="main-col__list hide">
+            <li class="main-col__item">
+              Ūdenim var pievienot īpašu barību grieztajiem ziediem.
+            </li>
+            <li class="main-col__item">
+              Noņemiet novītušos ziedus, lai tie neietekmētu svaigos.
+            </li>
+            <li class="main-col__item">
+              Ja rozes sāk noliekties, mēģiniet iegremdēt to kātiņus siltā ūdenī
+              uz 30 minūtēm, tas palīdzēs atjaunot to stingrību.
+            </li>
+          </ul>
+          <h4 class="main-col__sub-heading hide">
+            Ievērojot šos ieteikumus, jūsu pušķis ilgi saglabāsies svaigs un
+            skaists!
+          </h4>
+        </div>
+        <div class="main__col2">
+          <h2 class="main-col__heading hide">
+            Инструкция по уходу за букетом, чтобы он радовал вас как можно
+            дольше:
+          </h2>
+          <h3 class="main-col__sub-heading hide">1. Подготовка букета:</h3>
+          <ul class="main-col__list hide">
+            <li class="main-col__item">
+              Сразу после получения распакуйте букет, удалите нижние листья,
+              которые могут попасть в воду.
+            </li>
+            <li class="main-col__item">Обрезка стеблей:</li>
+            <li class="main-col__item">
+              Обрезайте стебли каждый день или через день под углом 45 градусов
+              с помощью острого ножа или секатора.
+            </li>
+            <li class="main-col__item">
+              Исключения: ранункулюсы, тюльпаны, нарциссы – их лучше не
+              подрезать слишком часто.
+            </li>
+          </ul>
+          <h3 class="main-col__sub-heading hide">2. Вода и ваза:</h3>
+          <ul class="main-col__list hide">
+            <li class="main-col__item">
+              Используйте чистую, холодную воду (лучше фильтрованную или
+              отстоянную).
+            </li>
+            <li class="main-col__item">
+              Воду меняйте ежедневно или хотя бы раз в два дня.
+            </li>
+            <li class="main-col__item">
+              При каждой смене воды мойте вазу с мылом, чтобы избежать скопления
+              бактерий.
+            </li>
+            <li class="main-col__item">Объем воды:</li>
+            <li class="main-col__item">
+              Для цветов с жесткими стеблями (розы, лизиантусы) воды должно быть
+              много – примерно 2/3 вазы.
+            </li>
+            <li class="main-col__item">
+              Для эвкалипта и цветов с мягкими стеблями – воды поменьше, иначе
+              стебли могут начать загнивать.
+            </li>
+          </ul>
+          <h3 class="main-col__sub-heading hide">3. Условия размещения</h3>
+          <ul class="main-col__list hide">
+            <li class="main-col__item">
+              Держите букет подальше от батарей, теплых полов, прямых солнечных
+              лучей и сквозняков.
+            </li>
+            <li class="main-col__item">
+              Не ставьте цветы рядом с фруктами – они выделяют этилен, который
+              ускоряет увядание.
+            </li>
+          </ul>
+          <h3 class="main-col__sub-heading hide">4. Дополнительные советы</h3>
+          <ul class="main-col__list hide">
+            <li class="main-col__item">
+              Можно добавить в воду специальную подкормку для срезанных цветов.
+            </li>
+            <li class="main-col__item">
+              Удаляйте увядшие цветы, чтобы они не влияли на свежие.
+            </li>
+            <li class="main-col__item">
+              Если розы начали поникать, попробуйте погрузить стебли в теплую
+              воду на 30 минут, это поможет восстановить их тургор.
+            </li>
+          </ul>
+          <h4 class="main-col__sub-heading hide">
+            Соблюдая эти рекомендации, ваш букет будет долго оставаться свежим и
+            красивым!
+          </h4>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/anthurium.botanique/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="whatsapp:contact=+37125997144@s.whatsapp.com&message="Labdien!"
+          "><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="tel:+37125997144"><i class="fa-solid fa-mobile-screen"></i></a>
+        </div>
+      </footer>
+    </div>
 
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
