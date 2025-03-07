@@ -1,3 +1,5 @@
+/* ========== FONTS =========== */
+
 @font-face {
   font-family: 'Poppins';
   src: url('/fonts/Poppins-Medium.otf');
@@ -9,6 +11,8 @@
   src: url('/fonts/MontserratAlternates-Medium.otf');
   font-display: swap;
 }
+
+/* ========== GENERAL RULES =========== */
 
 
 * {
@@ -24,14 +28,23 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden
 }
 
 body {
-  background-color: #E4EFDE;
-  font-family: system-ui;
-  font-size: 18px;
   display: flex;
   flex-direction: column;
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  background-color: #E4EFDE;
+}
+
+p {
+  text-align: center;
+}
+
+p::after {
+  content: "🌱";
 }
 
 a {
@@ -40,29 +53,30 @@ a {
   text-decoration: none;
 }
 
+a:active,
+a:focus,
 a:hover {
   outline: none;
 }
 
-a:focus {
-  outline: none;
-}
-
-h2 {
+h2, h3 {
   font-family: 'Poppins', system-ui, sans-serif;
 }
 
-h3 {
-  font-family: 'Poppins', system-ui, sans-serif;
+h2, h3, li {
+  margin: 0.5em;
 }
 
 h4 {
-  font-family: 'Poppins' system-ui, sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
   text-wrap: balance;
   font-size: 20px;
   font-weight: 400;
   padding-block: 1em;
+  text-align: center;
 }
+
+/* ========== UTILITY CLASSES =========== */
 
 .container {
   margin: 1em;
@@ -71,21 +85,28 @@ h4 {
   padding-inline: 0.5em;
 }
 
-.main {
-  padding-top: 2em;
-  padding-bottom: 0.5em;
-}
-
 .hidden {
   display: none;
 }
 
+.hide {
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
+/* ========== PAGE =========== */
+
 .wrapper {
   min-height: 100%;
+  min-width: 100%;
   position: relative;
-  opacity: 0; /* Start with opacity 0 to make it invisible */
-  transform: translateY(-100%); /* Start the content below the viewport */
-  animation: reveal 1s forwards; /* Animation for reveal effect */
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: reveal 1s forwards;
 }
 
 @keyframes reveal {
@@ -95,12 +116,15 @@ h4 {
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
+/* ========== HEADER =========== */
+
 .header {
-  width: 100%;
+  min-width: 100%;
+  max-height: 80px;
   top: 0;
   padding: 0 2em;
   display: flex;
@@ -115,13 +139,14 @@ h4 {
   mix-blend-mode: hard-light;
 }
 
-
 .nav__language {
   display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
 .nav__language span {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   font-size: 14px;
   padding: 1em 0;
@@ -130,24 +155,26 @@ h4 {
 }
 
 .nav__language span:nth-child(2)::before {
-  content: "|";
+  content: "│";
   padding: 0 1em;
   font-weight: 100;
 }
 
-h2,
-h3,
-li {
-  margin: 0.5em;
+.nav__language span {
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.hide {
-  opacity: 0;
-  transition: all 2s ease;
+.nav__language span:focus {
+  outline: none;
 }
 
-.show {
-  opacity: 1;
+/* ========== MAIN =========== */
+
+.main {
+  padding-top: 2em;
+  padding-bottom: 0.5em;
 }
 
 .main-col__heading {
@@ -158,36 +185,30 @@ li {
 
 .main-col__list {
   list-style: none;
-  padding-left: 20px;
 }
 
 .main-col__item {
   position: relative;
-  /* Position relative to create space for the emoji */
   padding-left: 30px;
-  /* Add some padding for the emoji */
 }
 
 .main-col__list .main-col__item::before {
-  content: "🌷";
-  /* Apple emoji */
+  content: "❀";
   position: absolute;
-  /* Position the emoji */
   left: 0;
-  /* Place it at the start of the list item */
   top: 0;
-  /* Align with the list item */
   font-size: 18px;
-  /* Adjust the size of the emoji */
 }
 
 .main-col__sub-heading {
   margin: 1.5em 0;
-  margin-left: 1.5em;
   font-size: 18px;
 }
 
+/* ========== FOOTER =========== */
+
 .footer {
+  max-height: 80px;
   background: linear-gradient(to left, #91ab82cd, #333);
   filter: drop-shadow(0 0 0.75rem #0e0e0e3d);
 }
@@ -201,4 +222,10 @@ li {
   font-size: 20px;
   color: #fff;
   text-shadow: 0 0 2px #000;
+}
+
+@media (max-width: 769px) {
+  .container {
+    padding-inline: 1.5em;
+  }
 }
