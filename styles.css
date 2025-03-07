@@ -139,12 +139,6 @@ h4 {
   mix-blend-mode: hard-light;
 }
 
-.nav__language {
-  display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
-}
-
 .nav__language span {
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
