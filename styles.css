@@ -21,6 +21,9 @@ body,
 html {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -80,6 +83,20 @@ h4 {
 .wrapper {
   min-height: 100%;
   position: relative;
+  opacity: 0; /* Start with opacity 0 to make it invisible */
+  transform: translateY(-100%); /* Start the content below the viewport */
+  animation: reveal 1s forwards; /* Animation for reveal effect */
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .header {
