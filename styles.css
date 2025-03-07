@@ -84,7 +84,7 @@ h4 {
 .header {
   width: 100%;
   top: 0;
-  padding: 0 1em;
+  padding: 0 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,8 +127,7 @@ li {
 }
 
 .main-col__heading {
-  margin-bottom: 2.5em;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -158,8 +157,7 @@ li {
 }
 
 .main-col__sub-heading {
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin: 1.5em 0;
   margin-left: 1.5em;
 }
 
