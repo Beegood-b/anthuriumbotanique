@@ -106,7 +106,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #5c685b, #E4EFDE);
+  background: linear-gradient(to left, #7aa862, #615f5f);
   filter: drop-shadow(0 0 0.75rem #0e0e0e3d);
 }
 
@@ -188,7 +188,7 @@ li {
 }
 
 .footer {
-  background: linear-gradient(to right, #769873, #E4EFDE);
+  background: linear-gradient(to right, #7aa862, #615f5f);
   filter: drop-shadow(0 0 0.75rem #0e0e0e3d);
 }
 
@@ -198,7 +198,7 @@ li {
   align-items: center;
   column-gap: 2em;
   padding-block: 1em;
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   text-shadow: 0 0 2px #000;
 }
