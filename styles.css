@@ -106,7 +106,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to left, #7aa862, #615f5f);
+  background: linear-gradient(to left, #91ab82cd, #615f5f);
   filter: drop-shadow(0 0 0.75rem #0e0e0e3d);
 }
 
@@ -188,7 +188,7 @@ li {
 }
 
 .footer {
-  background: linear-gradient(to right, #7aa862, #615f5f);
+  background: linear-gradient(to left, #91ab82cd, #615f5f);
   filter: drop-shadow(0 0 0.75rem #0e0e0e3d);
 }
 
