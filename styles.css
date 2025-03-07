@@ -106,14 +106,18 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #769873, #E4EFDE);
+  background: linear-gradient(to right, #5c685b, #E4EFDE);
   filter: drop-shadow(0 0 0.75rem #0e0e0e3d);
+}
+
+.header-logo__img {
+  filter: invert(1);
+  mix-blend-mode: hard-light;
 }
 
 
 .nav__language {
   display: flex;
-  /* margin: 0.7em 0; */
 }
 
 .nav__language span {
@@ -121,6 +125,8 @@ h4 {
   cursor: pointer;
   font-size: 14px;
   padding: 1em 0;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
 }
 
 .nav__language span:nth-child(2)::before {
@@ -193,4 +199,6 @@ li {
   column-gap: 2em;
   padding-block: 1em;
   font-size: 24px;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
 }
