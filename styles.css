@@ -45,13 +45,6 @@ a:focus {
   outline: none;
 }
 
-ul,
-li,
-h2,
-h3 {
-  color: #333333;
-}
-
 h2 {
   font-family: 'Poppins', system-ui, sans-serif;
 }
@@ -110,7 +103,6 @@ h4 {
   cursor: pointer;
   font-size: 14px;
   padding: 1em 0;
-  color: #333;
 }
 
 .nav__language span:nth-child(2)::before {
@@ -183,6 +175,4 @@ li {
   column-gap: 2em;
   padding-block: 1em;
   font-size: 24px;
-  color: #333;
-  /* text-shadow: 0 0 2px #fff; */
 }
